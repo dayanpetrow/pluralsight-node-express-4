@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbotron"><%= title %></div>
+
+        <% for (let i=0; i<nav.length; i++) { %>
+            <li>
+                <a href="<%=nav[i].link%>"><%=nav[i].title%></a>
+            </li>
+        <%}%>
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
