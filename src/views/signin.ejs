@@ -11,10 +11,12 @@
             </li>
         <%}%>
 
-        <h1><%=book.details.title%></h1>
-        <a href="<%=book._id%>"><%=book.details.title%></a> <br />
-        <img src="<%=book.details.image_url%>" />
-        <p><%-book.details.description%></p>
+        <h1>Sign in</h2>
+        <form name="signInForm" action="/auth/signin" method="post">
+            Username: <input name="username" id="username" /><br />
+            Password: <input name="password" id="password" /><br />
+            <input type="submit" value="Sign in" />
+        </form>
 
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>

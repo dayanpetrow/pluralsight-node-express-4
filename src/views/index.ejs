@@ -11,6 +11,14 @@
             </li>
         <%}%>
 
+        <h1>Sign up</h2>
+        Or <a href="/auth/signin">sign in</a>
+        <form name="signUpForm" action="/auth/signUp" method="post">
+            Username: <input name="username" id="username" /><br />
+            Password: <input name="password" id="password" /><br />
+            <input type="submit" value="Sign Up" />
+        </form>
+
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
     </body>
